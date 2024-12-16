@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# Close any open System Preferences panes, to prevent them from overriding
+# settings we’re about to change
+osascript -e 'tell application "System Preferences" to quit'
+
+# Ask for the administrator password upfront
+sudo -v
+
 # home and end behavior like windows
 KEYBINDING_FILE="$HOME/Library/KeyBindings/DefaultKeyBinding.dict"
 if [ ! -f "$KEYBINDING_FILE" ]; then
@@ -18,17 +25,8 @@ defaults write -g InitialKeyRepeat -int 15  # delay until repeat
 
 # mouse
 defaults write -g com.apple.mouse.scaling -float 1      # tracking speed
-defaults write -g com.apple.mouse.linear -string "1"    # disable pointer acceleration
+defaults write -g com.apple.mouse.linear -bool true    # disable pointer acceleration
 
-# keyboard shortcuts
-# spotlight search, finder search window
-defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 "{ enabled = 0; }"
-defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 65 "{ enabled = 0; }"
-# map show launchpad to opt+space
-defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 160 '{ enabled = 1; value = { parameters = (32, 49, 524288); type = "standard"; }; }'
-# map "copy picture of selected area to clipboard" to shift + cmd + S
-defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 31 '{ enabled = 1; value = { parameters = (115, 1, 1179648); type = "standard"; }; }'
-
-# raycast 
-# raycast launch key
-defaults write com.raycast.macos raycastGlobalHotkey -string "Command-49"
+# finder
+defaults write com.apple.finder ShowStatusBar -bool true
+defaults write com.apple.finder ShowPathbar -bool true

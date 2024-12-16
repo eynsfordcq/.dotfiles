@@ -21,7 +21,11 @@ _darcs
 ^/LICENSE.*
 ^/COPYING
 
+# ssh
+.ssh/*
+
 # others
+.DS_Store
 \.gitmodules
 install.sh
 mac-config.sh

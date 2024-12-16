@@ -31,6 +31,7 @@ brew_casks=(
     "alt-tab"
     "bitwarden"
     "dbeaver-community"
+    "keka"
     "obsidian"
     "postman"
     "raycast"

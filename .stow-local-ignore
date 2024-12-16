@@ -24,3 +24,4 @@ _darcs
 # others
 \.gitmodules
 install.sh
+mac-config.sh

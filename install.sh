@@ -28,12 +28,14 @@ brews=(
 )
 
 brew_casks=(
+    "alt-tab"
     "bitwarden"
     "dbeaver-community"
     "obsidian"
     "postman"
     "raycast"
     "tabby"
+    "unnaturalscrollwheels"
     "visual-studio-code"
 )
 

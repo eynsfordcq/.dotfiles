@@ -11,12 +11,14 @@ sudo -v
 KEYBINDING_FILE="$HOME/Library/KeyBindings/DefaultKeyBinding.dict"
 if [ ! -f "$KEYBINDING_FILE" ]; then
     mkdir -p $HOME/Library/KeyBindings
-    echo '{
-    "\UF729" = "moveToBeginningOfLine:"; /* Home */
-    "\UF72B" = "moveToEndOfLine:"; /* End */
-    "$\UF729" = "moveToBeginningOfLineAndModifySelection:"; /* Shift + Home */
-    "$\UF72B" = "moveToEndOfLineAndModifySelection:"; /* Shift + End */
-    }' > "$KEYBINDING_FILE"
+    echo '
+{
+    "\UF729"  = moveToBeginningOfLine:; // home
+    "\UF72B"  = moveToEndOfLine:; // end
+    "$\UF729" = moveToBeginningOfLineAndModifySelection:; // shift-home
+    "$\UF72B" = moveToEndOfLineAndModifySelection:; // shift-end
+}
+    ' > "$KEYBINDING_FILE"
 fi
 
 # keyboard

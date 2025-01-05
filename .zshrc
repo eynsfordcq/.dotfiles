@@ -1,11 +1,18 @@
+# Determine the base path for Homebrew based on the OS
+if [[ "$(uname)" == "Darwin" ]]; then
+  BREW_PREFIX="/opt/homebrew"
+else
+  BREW_PREFIX="/home/linuxbrew/.linuxbrew"
+fi
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
 
 # load plugins
-source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $BREW_PREFIX/share/powerlevel10k/powerlevel10k.zsh-theme
+source $BREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $BREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # p10k
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.

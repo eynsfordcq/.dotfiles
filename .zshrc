@@ -1,8 +1,10 @@
 # Determine the base path for Homebrew based on the OS
 if [[ "$(uname)" == "Darwin" ]]; then
   BREW_PREFIX="/opt/homebrew"
+  alias rm='trash'
 else
   BREW_PREFIX="/home/linuxbrew/.linuxbrew"
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
 
 # Path to your oh-my-zsh installation.
@@ -34,6 +36,5 @@ eval "$(zoxide init zsh --cmd cd)"
 alias ls='eza'
 alias ll='ls -l'
 alias cat='bat'
-alias rm='trash'
 
 

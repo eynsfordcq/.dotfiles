@@ -29,3 +29,5 @@ _darcs
 \.gitmodules
 install.sh
 mac-config.sh
+darwin.sh
+linux.sh

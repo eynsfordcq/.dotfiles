@@ -1,8 +1,8 @@
 # Determine the base path for Homebrew based on the OS
 if [[ "$(uname)" == "Darwin" ]]; then
-  source ./.dotfiles/darwin.sh
+  source ~/.dotfiles/darwin.sh
 else
-  source ./.dotfiles/linux.sh
+  source ~/.dotfiles/linux.sh
 fi
 
 # Path to your oh-my-zsh installation.

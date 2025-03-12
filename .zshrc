@@ -33,6 +33,9 @@ setopt hist_find_no_dups
 # zoxide (replaces cd)
 eval "$(zoxide init zsh --cmd cd)"
 
+# uv
+eval "$(uv generate-shell-completion zsh)"
+
 # aliases
 alias ls='eza'
 alias ll='ls -l'

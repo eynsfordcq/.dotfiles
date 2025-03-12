@@ -2,7 +2,7 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title Open Remote in VS Code
+# @raycast.title Tool - Open Remote in VS Code
 # @raycast.mode silent
 
 # Optional parameters:

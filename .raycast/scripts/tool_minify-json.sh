@@ -2,7 +2,7 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title JSON to One-Line
+# @raycast.title Tool - JSON to One-Line
 # @raycast.mode silent
 
 # Optional parameters:

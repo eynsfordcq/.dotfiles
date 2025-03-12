@@ -5,6 +5,9 @@ else
   source ~/.dotfiles/linux.sh
 fi
 
+# custom envs
+[ -f ~/.env ] && source ~/.env
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh

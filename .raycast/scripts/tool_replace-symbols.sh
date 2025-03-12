@@ -2,7 +2,7 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title Replace Symbols with Spaces
+# @raycast.title Tool - Replace Symbols with Spaces
 # @raycast.mode silent
 
 # Optional parameters:

@@ -2,7 +2,7 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title Add Prompt Tag
+# @raycast.title Tool - Add Prompt Tag
 # @raycast.mode silent
 
 # Optional parameters:

@@ -9,7 +9,8 @@ set hlsearch            " Highlight search results
 set incsearch           " Show match as you type
 set showcmd             " Show command in bottom bar
 set wildmenu            " Enhanced command-line completion
+set cursorline          " Highlight the current line
+set clipboard=unnamed   " Use system clipboard
 syntax on               " Enable syntax highlighting
 colorscheme desert      " Set a colorscheme (adjust as desired)
 filetype plugin on      " Enable file type detection
-set cursorline          " Highlight the current line

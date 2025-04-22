@@ -13,13 +13,12 @@ export ZSH="$HOME/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
 
 # load plugins
-source $BREW_PREFIX/share/powerlevel10k/powerlevel10k.zsh-theme
+# source $BREW_PREFIX/share/powerlevel10k/powerlevel10k.zsh-theme
 source $BREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $BREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# p10k
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# starship
+eval "$(starship init zsh)"
 
 # history config
 setopt appendhistory # append commands instead of overwrite

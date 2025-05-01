@@ -47,6 +47,12 @@ stow .
 stow -t ~/.ssh/ .ssh
 ```
 
+#### Iterm2 Setup
+
+```sh
+ln -s "$(pwd)/iterm2/iterm2.json" ~/.config/iterm2/AppSupport/DynamicProfiles/iterm2.json
+```
+
 #### Raycast setup
 
 - in `raycast extensions -> script commands`

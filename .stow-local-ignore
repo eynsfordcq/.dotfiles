@@ -31,3 +31,4 @@ install.sh
 mac-config.sh
 darwin.sh
 linux.sh
+iterm2/*

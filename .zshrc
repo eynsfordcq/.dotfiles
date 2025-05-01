@@ -40,4 +40,6 @@ alias ls='eza'
 alias ll='ls -l'
 alias cat='bat'
 
-
+# go
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin

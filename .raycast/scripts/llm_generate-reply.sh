@@ -11,6 +11,9 @@
 # @raycast.argument2 { "type": "text", "placeholder": "Message", "optional": true }
 # @raycast.argument3 { "type": "text", "placeholder": "Tone", "optional": true }
 
+# source env file
+[ -f $HOME/.env ] && source $HOME/.env
+
 # Check if LLM_API_KEY is set
 if [ -z "$LLM_API_KEY" ]; then
   echo "Error: LLM_API_KEY is not set."

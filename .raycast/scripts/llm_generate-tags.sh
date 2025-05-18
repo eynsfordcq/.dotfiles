@@ -8,6 +8,9 @@
 # Optional parameters:
 # @raycast.icon 📋
 
+# source env file
+[ -f $HOME/.env ] && source $HOME/.env
+
 # Check if LLM_API_KEY is set
 if [ -z "$LLM_API_KEY" ]; then
   echo "Error: LLM_API_KEY is not set."

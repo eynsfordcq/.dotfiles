@@ -38,7 +38,7 @@ fi
 
 # Create the XML wrapped content
 PROMPT="
-Generate clear and concise commit messages for the following git diff.
+Generate clear and concise one-line commit messages for the following git diff.
 Keep the commit message in all lowercase and avoid emojis.
 Output only the commit message.
 <context>

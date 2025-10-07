@@ -1,3 +1,0 @@
-[submodule ".ssh/config.d"]
-	path = .ssh/config.d
-	url = git@github.com:eynsfordcq/ssh-configs.git

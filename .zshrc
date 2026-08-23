@@ -39,7 +39,19 @@ eval "$(uv generate-shell-completion zsh)"
 alias ls='eza'
 alias ll='ls -l'
 alias cat='bat'
+alias npm='pnpm'
+alias npx='pnpx'
 
 # go
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+
+# pnpm
+export PNPM_HOME="/Users/zhengjie/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME/bin:"*) ;;
+  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
+esac
+
+# rust
+export PATH="/opt/homebrew/opt/rustup/bin:$PATH"

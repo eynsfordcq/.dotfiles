@@ -39,8 +39,6 @@ eval "$(uv generate-shell-completion zsh)"
 alias ls='eza'
 alias ll='ls -l'
 alias cat='bat'
-alias npm='pnpm'
-alias npx='pnpx'
 
 # go
 export GOPATH=$HOME/go

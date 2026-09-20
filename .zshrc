@@ -32,6 +32,12 @@ setopt hist_find_no_dups
 # zoxide (replaces cd)
 eval "$(zoxide init zsh --cmd cd)"
 
+# list contents after every directory change (works with zoxide cd/cdi)
+chpwd_auto_ls() {
+  eza -l
+}
+chpwd_functions+=(chpwd_auto_ls)
+
 # uv
 eval "$(uv generate-shell-completion zsh)"
 

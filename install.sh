@@ -34,7 +34,6 @@ brews=(
     "wget"
     "xz"
     "zoxide"
-    "powerlevel10k"             # zsh plugins
     "zsh-autosuggestions"
     "zsh-syntax-highlighting"
 )
@@ -42,11 +41,10 @@ brews=(
 brew_casks=(
     "bitwarden"
     "bruno"
-    "claude-code"
+    "claude-code@latest"
     "codexbar"
     "dbx"
-    "dockdoor"
-    "headlamp"
+    "ghostty"
     "iterm2"
     "keka"
     "obsidian"
@@ -54,35 +52,35 @@ brew_casks=(
     "raycast"
     "tabby"
     "tailscale-app"
-    "unnaturalscrollwheels"
     "visual-studio-code"
+    "vorssaint"
 )
 
 case "$1" in
-    "brew")
-        for brew in "${brews[@]}"; do
-            brew install "$brew"
-        done
-        ;;
-    "casks")
-        for cask in "${brew_casks[@]}"; do
-            brew install --cask "$cask"
-        done
-        ;;
-    "")
-        # brews
-        for brew in "${brews[@]}"; do
-            brew install "$brew"
-        done
-        # casks
-        for cask in "${brew_casks[@]}"; do
-            brew install --cask "$cask"
-        done
-        ;;
-    *) 
-        echo "Invalid argument. Use 'brew' to install brew packages, 'casks' to install casks, or no argument to install both."
-        exit 1
-        ;;
+"brew")
+    for brew in "${brews[@]}"; do
+        brew install "$brew"
+    done
+    ;;
+"casks")
+    for cask in "${brew_casks[@]}"; do
+        brew install --cask "$cask"
+    done
+    ;;
+"")
+    # brews
+    for brew in "${brews[@]}"; do
+        brew install "$brew"
+    done
+    # casks
+    for cask in "${brew_casks[@]}"; do
+        brew install --cask "$cask"
+    done
+    ;;
+*)
+    echo "Invalid argument. Use 'brew' to install brew packages, 'casks' to install casks, or no argument to install both."
+    exit 1
+    ;;
 esac
 
 echo "Done"

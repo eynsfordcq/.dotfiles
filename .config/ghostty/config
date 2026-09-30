@@ -1,0 +1,8 @@
+theme = Catppuccin Mocha
+window-padding-x = 4
+window-height = 45
+window-width = 180
+font-family = MesloLGS NF
+font-size = 12
+font-thicken = true
+shell-integration-features = ssh-env,ssh-terminfo

@@ -1,71 +1,110 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
 [aws]
-symbol = "  "
-format = " [aws](italic) [$symbol $profile $region]($style)"
-style = "bold blue"
+symbol = " "
+
+[azure]
+symbol = " "
+
+[battery]
+full_symbol = "󰁹 "
+charging_symbol = "󰂄 "
+discharging_symbol = "󰂃 "
+unknown_symbol = "󰂑 "
+empty_symbol = "󰂎 "
 
 [buf]
 symbol = " "
-format = " [buf](italic) [$symbol $version $buf_version]($style)"
+
+[bun]
+symbol = " "
 
 [c]
 symbol = " "
-format = " [$symbol($version(-$name))]($style)"
+
+[cpp]
+symbol = " "
 
 [cmake]
 symbol = " "
 
+[cobol]
+symbol = " "
+
 [conda]
-symbol = " "
-format = " conda [$symbol$environment]($style)"
+symbol = " "
+
+[container]
+symbol = " "
 
 [crystal]
 symbol = " "
 
 [dart]
-symbol = " "
-format = " dart [$symbol($version )]($style)"
+symbol = " "
+
+[deno]
+symbol = " "
+
+[direnv]
+symbol = " "
+
+[directory]
+read_only = " 󰌾"
 
 [docker_context]
 symbol = " "
-format = " docker [$symbol$context]($style)"
+
+[dotnet]
+symbol = " "
 
 [elixir]
 symbol = " "
-format = " exs [$symbol $version OTP $otp_version ]($style)"
 
 [elm]
 symbol = " "
-format = " elm [$symbol($version )]($style)"
+
+[erlang]
+symbol = " "
 
 [fennel]
 symbol = " "
 
+[fortran]
+symbol = " "
+
 [fossil_branch]
 symbol = " "
 
+[gcloud]
+symbol = "󱇶 "
+
+[gleam]
+symbol = " "
+
 [git_branch]
 symbol = " "
-style = "italic bright-blue"
-
-[git_status]
-style = "bold italic bright-blue"
 
 [git_commit]
 tag_symbol = '  '
 
 [golang]
 symbol = " "
-format = " go [$symbol($version )]($style)"
+
+[gradle]
+symbol = " "
 
 [guix_shell]
 symbol = " "
 
 [haskell]
 symbol = " "
-format = " hs [$symbol($version )]($style)"
 
 [haxe]
 symbol = " "
+
+[helm]
+symbol = " "
 
 [hg_branch]
 symbol = " "
@@ -74,18 +113,22 @@ symbol = " "
 ssh_symbol = " "
 
 [java]
-symbol = " "
-format = " java [${symbol}(${version} )]($style)"
+symbol = " "
 
 [julia]
 symbol = " "
-format = " jl [$symbol($version )]($style)"
 
 [kotlin]
 symbol = " "
 
+[kubernetes]
+symbol = "󱃾 "
+
 [lua]
 symbol = " "
+
+[maven]
+symbol = " "
 
 [memory_usage]
 symbol = "󰍛 "
@@ -93,8 +136,17 @@ symbol = "󰍛 "
 [meson]
 symbol = "󰔷 "
 
+[mojo]
+symbol = "󰈸 "
+
+[nats]
+symbol = " "
+
+[netns]
+symbol = "󰛳 "
+
 [nim]
-symbol = "󰆥 "
+symbol = " "
 
 [nix_shell]
 symbol = " "
@@ -105,26 +157,42 @@ symbol = " "
 [ocaml]
 symbol = " "
 
+[odin]
+symbol = "󰟢 "
+
+[opa]
+symbol = " "
+
+[openstack]
+symbol = " "
+
 [os.symbols]
+AIX = " "
+AlmaLinux = " "
 Alpaquita = " "
 Alpine = " "
-AlmaLinux = " "
+ALTLinux = " "
 Amazon = " "
 Android = " "
+AOSC = " "
 Arch = " "
 Artix = " "
+Bluefin = " "
 CachyOS = " "
 CentOS = " "
 Debian = " "
 DragonFly = " "
-Emscripten = " "
-EndeavourOS = " "
+Elementary = " "
+Emscripten = " "
+EndeavourOS = " "
 Fedora = " "
 FreeBSD = " "
-Garuda = "󰛓 "
+Garuda = " "
 Gentoo = " "
 HardenedBSD = "󰞌 "
-Illumos = "󰈸 "
+Illumos = " "
+InstantOS = " "
+Ios = "󰀷 "
 Kali = " "
 Linux = " "
 Mabox = " "
@@ -136,21 +204,27 @@ Mint = " "
 NetBSD = " "
 NixOS = " "
 Nobara = " "
-OpenBSD = "󰈺 "
+OpenBSD = " "
+OpenCloudOS = " "
+openEuler = " "
 openSUSE = " "
-OracleLinux = "󰌷 "
+OracleLinux = "󰺡 "
+PikaOS = " "
 Pop = " "
 Raspbian = " "
-Redhat = " "
-RedHatEnterprise = " "
-RockyLinux = " "
+Redhat = "󱄛 "
+RedHatEnterprise = "󱄛 "
 Redox = "󰀘 "
-Solus = "󰠳 "
+RockyLinux = " "
+Solus = " "
 SUSE = " "
 Ubuntu = " "
+Ultramarine = " "
 Unknown = " "
+Uos = " "
 Void = " "
 Windows = "󰍲 "
+Zorin = " "
 
 [package]
 symbol = "󰏗 "
@@ -164,11 +238,23 @@ symbol = " "
 [pijul_channel]
 symbol = " "
 
+[pixi]
+symbol = "󰏗 "
+
+[pulumi]
+symbol = " "
+
+[purescript]
+symbol = " "
+
 [python]
 symbol = " "
-format = " [py](italic) [${symbol}${version}]($style)"
-version_format = "${raw}"
-style = "italic bright-yellow"
+
+[raku]
+symbol = "󱖊 "
+
+[red]
+symbol = "󱍼 "
 
 [rlang]
 symbol = "󰟔 "
@@ -182,29 +268,41 @@ symbol = "󱘗 "
 [scala]
 symbol = " "
 
+[shlvl]
+symbol = "󰹍 "
+
+[singularity]
+symbol = " "
+
+[solidity]
+symbol = " "
+
+[spack]
+symbol = " "
+
+[status]
+symbol = " "
+
+[sudo]
+symbol = " "
+
 [swift]
 symbol = " "
 
+[terraform]
+symbol = " "
+
+[vlang]
+symbol = " "
+
+[typst]
+symbol = " "
+
+[vagrant]
+symbol = " "
+
+[xmake]
+symbol = " "
+
 [zig]
 symbol = " "
-
-[gradle]
-symbol = " "
-
-[directory]
-read_only = " 󰌾"
-truncation_length = 2
-truncation_symbol = "…/"
-use_os_path_sep = true
-style = "italic blue"
-repo_root_style = 'bold blue'
-
-[cmd_duration]
-format = "[$duration](italic white)"
-
-[time]
-disabled = false
-format = "[$time]($style) "
-time_format = "%R"
-utc_time_offset = "local"
-style = "italic dimmed white"

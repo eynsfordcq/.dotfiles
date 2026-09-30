@@ -13,7 +13,6 @@ export ZSH="$HOME/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
 
 # load plugins
-# source $BREW_PREFIX/share/powerlevel10k/powerlevel10k.zsh-theme
 source $BREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $BREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
@@ -45,6 +44,7 @@ eval "$(uv generate-shell-completion zsh)"
 alias ls='eza'
 alias ll='ls -l'
 alias cat='bat'
+alias k='kubectl'
 
 # go
 export GOPATH=$HOME/go

@@ -1,0 +1,107 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "agent": {
+    "threads_sidebar": {
+      "auto_open": true,
+      "position": "right"
+    },
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "agent_servers": {
+    
+  },
+  "file_scan_exclusions": ["**/__pycache__", "..."],
+  "git": {
+    "git_gutter": "tracked_files",
+  },
+  "inlay_hints": {
+    "enabled": true,
+  },
+  "toolbar": {
+    "code_actions": false,
+    "agent_review": false,
+    "breadcrumbs": true,
+  },
+  "minimap": {
+    "show": "auto",
+  },
+  "relative_line_numbers": "enabled",
+  "gutter": {
+    "git_gutter_width": {
+      "custom": 2.0,
+    },
+    "line_numbers": true,
+  },
+  "auto_update": false,
+  "format_on_save": "on",
+  "ui_font_weight": 400.0,
+  "ui_font_family": "SF Pro",
+  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_weight": 300.0,
+  "icon_theme": "Material Icon Theme",
+  "collaboration_panel": {
+    "button": false,
+  },
+  "terminal": {
+    "font_family": "MesloLGS NF",
+    "shell": "system",
+  },
+  "disable_ai": true,
+  "status_bar": {
+    "line_endings_button": true,
+    "active_language_button": true,
+  },
+  "project_panel": {
+    "hide_hidden": false,
+    "indent_guides": {
+      "show": "always",
+    },
+    "sticky_scroll": true,
+    "git_status_indicator": true,
+    "diagnostic_badges": false,
+    "show_diagnostics": "all",
+    "git_status": true,
+    "bold_folder_labels": false,
+    "folder_indicator": "both",
+    "entry_spacing": "comfortable",
+    "hide_root": false,
+    "default_width": 280.0,
+    "dock": "left",
+    "button": true,
+  },
+  "vim_mode": true,
+  "base_keymap": "VSCode",
+  "ui_font_size": 15.0,
+  "buffer_font_size": 13.0,
+  "theme": "One Dark Pro Night Flat",
+  "languages": {
+    "Python": {
+      "language_servers": ["ty", "ruff"],
+      "code_actions_on_format": {
+        "source.organizeImports.ruff": true,
+      },
+      "formatter": {
+        "language_server": {
+          "name": "ruff",
+        },
+      },
+      "inlay_hints": {
+        "enabled": true,
+        "toggle_on_modifiers_press": {
+          "control": true,
+          "alt": true,
+        },
+      },
+    },
+  },
+  "wrap_guides": [80, 88, 120],
+}
